@@ -1,0 +1,217 @@
+<body class="fixed-navigation">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span>
+                                <img alt="image" class="img-circle" src="http://q1.qlogo.cn/g?b=qq&nk={$userInfo.qq}&s=160" style="width:60px;" />
+                            </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">{$userInfo.user}</strong>
+                                    </span>
+                                    <span class="text-muted text-xs block">uid:{$userInfo.uid}
+                                        <b class="caret"></b>
+                                    </span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li>
+                                    <a href="{:url('profile')}">
+                                        <i class="ti-user m-r-5"></i> 个人信息</a>
+                                </li>
+                                <li>
+                                    <a href="{:url('recharge')}">
+                                        <i class="ti-money m-r-5"></i> 充值余额</a>
+                                </li>
+                                {if condition="$userInfo.power eq 9"}
+                                <li>
+                                    <a href="{:url('index/Admin/index')}">
+                                        <i class="ti-settings m-r-5"></i> 站长后台</a>
+                                </li>
+                                {/if}
+                                <li>
+                                    <a href="{:url('index/Index/logout')}" onclick="return confirm('确认退出登录？');">
+                                        <i class="ti-power-off m-r-5"></i> 退出登录</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            IN+
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="{:url('index')}">
+                            <i class="fa fa-th-large"></i>
+                            <span class="nav-label">用户中心</span>
+                            </span>
+                        </a>
+                    </li>
+
+
+
+                    <!-- <li>
+                        <a href="#">
+                            <i class="fa fa-plus"></i>
+                            <span class="nav-label">代挂管理</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+
+                            <li><a href="{:url('qqAdd')}"><i class="fa fa-plus"></i> <span class="submenu-label">添加QQ</span></a>
+                        </li>
+                        <li><a href="{:url('qqList')}"><i class="fa fa-list-ul"></i> <span
+                                class="submenu-label">QQ列表</span></a></li>
+                        <li><a href="{:url('order')}"><i class="fa fa-plus-circle"></i> <span
+                                class="submenu-label">自助下单</span></a></li>
+
+                        </ul>
+                    </li> -->
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-globe fa-lg"></i>
+                            <span class="nav-label">排行榜</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="{:url('rank',['kind'=>'invite'])}">
+                                    <i class="fa fa-users"></i>
+                                    <span class="submenu-label">邀请人数排行榜</span>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="{:url('rank',['kind'=>'order'])}">
+                                    <i class="fa fa-list-ul"></i>
+                                    <span class="submenu-label">分站订单排行榜</span>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </li>
+
+
+
+                    <!-- <li>
+                        <a href="{:url('ktfz')}">
+                            <i class="fa fa-flask"></i>
+                            <span class="nav-label">开通分站</span>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="nav-label">自助商店</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="{:url('shop')}">
+                                    <i class="fa fa-trophy"></i>
+                                    <span class="submenu-label">自助购买套餐</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('recharge')}">
+                                    <i class="fa fa-money"></i>
+                                    <span class="submenu-label">充值余额</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('rmbList')}">
+                                    <i class="fa fa-tasks"></i>
+                                    <span class="submenu-label">收支明细</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-hand-o-up fa-lg"></i>
+                            <span class="nav-label">会员福利</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="{:url('invite')}">
+                                    <i class="fa fa-users"></i>
+                                    <span class="submenu-label">邀请好友</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{:url('qiandao')}">
+                                    <i class="fa fa-sign-in"></i>
+                                    <span class="submenu-label">每日签到</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    </li>
+
+                    <!-- <li class="{:checkIfActive('chat')}">
+                        <a href="{:url('chat')}">
+                            <span class="menu-icon">
+                                <i class="fa fa-comments"></i>
+                            </span>
+                            <span class="text">
+                                聊天室
+                            </span>
+                            <span class="menu-hover"></span>
+                        </a>
+                    </li> -->
+
+                    <li class="{:checkIfActive('help')}">
+                        <a href="{:url('help')}">
+                            <span class="menu-icon">
+                                <i class="fa fa-h-square fa-lg"></i>
+                            </span>
+                            <span class="text">
+                                帮助中心
+                            </span>
+                            <span class="menu-hover"></span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg sidebar-content">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top gules-bg" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <!-- <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="搜索添加QQ账号..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form> -->
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <ul class="nav navbar-top-links navbar-right">
+                            <li>
+                                <a href="{:url('index')}" title="返回首页">
+                                    <i class="fa fa-home"></i>首页</a>
+                            </li>
+                            <!-- <li>
+                                <a href="{:url('qqadd')}" title="QQ列表">
+                                    <i class="fa fa-qq"></i>QQ管理</a>
+                            </li> -->
+                            <li>
+                                <a href="{:url('index/Index/logout')}" onclick="return confirm('确认退出登录？');">
+                                    <i class="fa fa-sign-out"></i>
+                                    <span class="nav-label">注销登录</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                </nav>
+            </div>
+            </a>
+            <div class="wrapper wrapper-content">

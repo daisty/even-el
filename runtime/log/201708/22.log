@@ -1,0 +1,32 @@
+[ 2017-08-22T17:29:06+08:00 ] ::1 ::1 GET /index/panel/chat.html
+[ log ] localhost/index/panel/chat.html [运行时间：0.137008s][吞吐率：7.30req/s] [内存消耗：1,890.13kb] [文件加载：46]
+[ error ] [8]未定义数组下标: 0
+[ error ] [8]未定义数组下标: 0
+
+---------------------------------------------------------------
+[ 2017-08-22T17:31:36+08:00 ] ::1 ::1 GET /index/panel/chat.html
+[ log ] localhost/index/panel/chat.html [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：1,710.13kb] [文件加载：44]
+[ error ] [8]未定义数组下标: 0
+[ error ] [8]未定义数组下标: 0
+
+---------------------------------------------------------------
+[ 2017-08-22T17:31:59+08:00 ] ::1 ::1 GET /index/panel/rank/kind/skin-config.html
+[ log ] localhost/index/panel/rank/kind/skin-config.html [运行时间：0.097006s][吞吐率：10.31req/s] [内存消耗：1,695.48kb] [文件加载：44]
+[ error ] [0]Malformed UTF-8 characters, possibly incorrectly encoded
+
+---------------------------------------------------------------
+[ 2017-08-22T17:32:01+08:00 ] ::1 ::1 GET /index/panel/rank/kind/skin-config.html
+[ log ] localhost/index/panel/rank/kind/skin-config.html [运行时间：0.122007s][吞吐率：8.20req/s] [内存消耗：1,695.48kb] [文件加载：44]
+[ error ] [0]Malformed UTF-8 characters, possibly incorrectly encoded
+
+---------------------------------------------------------------
+[ 2017-08-22T17:32:13+08:00 ] ::1 ::1 GET /index/Panel/order/qid/skin-config.html
+[ log ] localhost/index/Panel/order/qid/skin-config.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,700.59kb] [文件加载：44]
+[ error ] [0]Malformed UTF-8 characters, possibly incorrectly encoded
+
+---------------------------------------------------------------
+[ 2017-08-22T17:32:15+08:00 ] ::1 ::1 GET /index/Panel/order/qid/skin-config.html
+[ log ] localhost/index/Panel/order/qid/skin-config.html [运行时间：0.121007s][吞吐率：8.26req/s] [内存消耗：1,700.59kb] [文件加载：44]
+[ error ] [0]Malformed UTF-8 characters, possibly incorrectly encoded
+
+---------------------------------------------------------------

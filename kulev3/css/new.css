@@ -1,0 +1,40 @@
+.table {
+    margin-bottom: 5px;
+}
+
+.form-mg {
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.row {
+    padding: 10px 0px;
+    line-height: 20px;
+}
+
+p {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 30px 0px;
+    ;
+}
+
+a {
+    color: #fff;
+}
+
+.pitch {
+    padding: 50PX 0PX;
+    border-bottom: 1px solid #eee;
+}
+
+.checkMargin {
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.form-mg {
+    border: 1px solid #eee;
+    background-color: #fff;
+    display: none;
+}

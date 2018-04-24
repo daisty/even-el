@@ -1,0 +1,224 @@
+<body class="fixed-navigation">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span>
+                                <img alt="image" class="img-circle" src="http://q1.qlogo.cn/g?b=qq&nk={$userInfo.qq}&s=160" style="width:60px;" />
+                            </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">{$userInfo.user}</strong>
+                                    </span>
+                                    <span class="text-muted text-xs block">uid:{$userInfo.uid}
+                                        <b class="caret"></b>
+                                    </span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li>
+                                    <a href="{:url('index/Panel/profile')}">
+                                        <i class="ti-user m-r-5"></i> 个人信息</a>
+                                </li>
+                                <li>
+                                    <a href="{:url('recharge')}">
+                                        <i class="ti-money m-r-5"></i> 充值余额</a>
+                                </li>
+                                {if condition="$userInfo.power eq 9"}
+                                <li>
+                                    <a href="{:url('index/Admin/index')}">
+                                        <i class="ti-settings m-r-5"></i> 站长后台</a>
+                                </li>
+                                {/if}
+                                <li>
+                                    <a href="{:url('index/Index/logout')}" onclick="return confirm('确认退出登录？');">
+                                        <i class="ti-power-off m-r-5"></i> 退出登录</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            IN+
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="{:url('index')}">
+                            <i class="fa fa-th-large"></i>
+                            <span class="nav-label">用户中心</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-edit fa-lg"></i>
+                            <span class="nav-label">站点设置</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            {if condition="ZID eq 1"}
+                            <li>
+                                <a href="{:url('mainSet')}">
+                                    <i class="fa fa-home"></i> 主站配置</a>
+                            </li>
+                            <!-- <li><a href="{:url('emailSet')}"><i class="fa fa-envelope"></i> 邮箱配置</a></li> -->
+                            <!--li><a href="{:url('setDhbl')}"><i class="fa fa-exchange"></i> 元宝兑换比例</a></li-->
+                            <!-- <li>
+                                <a href="{:url('selectMb')}">
+                                    <i class="fa fa-sellsy"></i> 选择模板</a>
+                            </li> -->
+                            <li>
+                                <a href="{:url('paySet')}">
+                                    <i class="fa fa-exchange"></i> 在线支付设置</a>
+                            </li>
+                            {/if}
+                            <!-- <li><a href="{:url('webSet')}"><i class="fa fa-edit"></i> 站点设置</a></li> -->
+                            <li>
+                                <a href="{:url('priceSet')}">
+                                    <i class="fa fa-money"></i>订单管理</a>
+                            </li>
+                            <!-- <li><a href="{:url('appSet')}"><i class="fa fa-cog"></i> APP设置</a></li> -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-list-ul fa-lg"></i>
+                            <span class="nav-label">数据管理</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="{:url('userList')}">
+                                    <i class="fa fa-user"></i> 用户管理</a>
+                            </li>
+                            <li>
+                                <a href="{:url('kmList')}">
+                                    <i class="fa fa-caret-square-o-right"></i> 用户余额</a>
+                            </li>
+                            <!-- <li><a href="{:url('kami')}"><i class="fa fa-share-alt"></i> 代挂卡密管理</a></li> -->
+                            <!-- {if condition="ZID eq 1"}
+						<li><a href="{:url('qqList')}"><i class="fa fa-qq"></i> ＱＱ管理</a></li>
+						{/if} -->
+                        </ul>
+                    </li>
+
+                    </li>
+                    <!-- <li class="{:checkIfActive('tixian')}">
+                        <a href="{:url('tixian')}">
+                            <span class="menu-icon">
+                                <i class="fa fa-money fa-lg"></i>
+                            </span>
+                            <span class="text">
+                                余额提现
+                            </span>
+                            <span class="menu-hover"></span>
+                        </a>
+                    </li>
+                    {if condition="ZID eq 1 or config('web_super')"}
+                    <li class="{:checkIfActive('ktfz')}">
+                        <a href="{:url('ktfz')}">
+                            <span class="menu-icon">
+                                <i class="fa fa-share-alt fa-lg"></i>
+                            </span>
+                            <span class="text">
+                                开通分站
+                            </span>
+                            <span class="menu-hover"></span>
+                        </a>
+                    </li>
+                    {/if} {if condition="ZID eq 1 or config('web_super')"}
+                    <li class="{:checkIfActive('weblist')}">
+                        <a href="{:url('webList')}">
+                            <span class="menu-icon">
+                                <i class="fa fa-list-alt fa-lg"></i>
+                            </span>
+                            <span class="text">
+                                分站列表
+                            </span>
+                            <span class="menu-hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        {/if} {if condition="ZID eq 1"}
+
+                        <a href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="nav-label">数据导出</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            {volist name="webTools" id="webTool"}
+                            <li>
+                                <a href="{:url('export',['tid'=>$webTool.tid])}">
+                                    <i class="fa fa-money"></i>
+                                    <span class="submenu-label">{$webTool.name}</span>
+                                </a>
+                            </li>
+                            {/volist}
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-hand-o-up fa-lg"></i>
+                            <span class="nav-label">倒入数据</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="{:url('import')}?kind=pwd">
+                                    <i class="fa fa-star"></i>导入密码错误QQ</a>
+                            </li>
+                            <li>
+                                <a href="{:url('import')}?kind=bh">
+                                    <i class="fa fa-star"></i>导入登录保护QQ</a>
+                            </li>
+                            <li>
+                                <a href="{:url('import')}?kind=dj">
+                                    <i class="fa fa-star"></i>导入账号冻结QQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    {/if} -->
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg sidebar-content">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top gules-bg" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <!-- <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="搜索添加QQ账号..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form> -->
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <ul class="nav navbar-top-links navbar-right">
+                            <li>
+                                <a href="{:url('index')}" title="返回首页">
+                                    <i class="fa fa-home"></i>首页</a>
+                            </li>
+                            <!-- <li>
+                                <a href="{:url('qqadd')}" title="QQ列表">
+                                    <i class="fa fa-qq"></i>QQ管理</a>
+                            </li> -->
+                            <li>
+                                <a href="{:url('index/Index/logout')}" onclick="return confirm('确认退出登录？');">
+                                    <i class="fa fa-sign-out"></i>
+                                    <span class="nav-label">注销登录</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                </nav>
+            </div>
+            </a>
+            <div class="wrapper wrapper-content">

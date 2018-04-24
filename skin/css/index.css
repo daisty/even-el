@@ -1,0 +1,353 @@
+/* 新添加 */
+/*--slider--*/
+#navM{
+  float: left;
+  margin-left: 30%;
+}
+.loginHe{
+  float: right;
+  line-height: 65px;
+}
+.pricing-plans .plan-price > b{
+  font-size: 55px;
+}
+@media screen and (max-width: 1199px) {
+  #navM{
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #navM{
+    margin-left: 6%;
+  }
+}
+@media screen and (max-width: 767px) {
+
+}
+#naver {
+  background: rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+}
+.navbar-nav > li > a {
+  padding: 5px 14px;
+}
+.navbar-default .navbar-nav > li > a:hover{
+  color: #00a0dc;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #00a0dc;
+  background: none!important;
+  border: 0 none;
+}
+
+.navbar-default .navbar-nav>.active> {
+  color: #35ead2 !important;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  color: #00a0dc;
+  border: 0 none;
+}
+.agileits-banner{
+  height: 800px;
+}
+.agileits-banner1 {
+  background: url(../../assets/Index/img/b8.jpg) no-repeat 0px 0px;
+  background-size: cover;
+  padding: 20.1em 0;
+}
+
+.agileits-banner2 {
+  background: url(../../assets/Index/img/banner1.jpg) no-repeat 0px 0px;
+  background-size: cover;
+  padding: 20.1em 0;
+
+}
+
+.agileits-banner3 {
+  background: url(../../assets/Index/img/banner2.jpg) no-repeat 0px 0px;
+  background-size: cover;
+  padding: 20em 0;
+}
+
+.about-w3ls {
+  background: url(../../skin/images/about.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.imgs {
+  position: relative;
+  width: 742px;
+  height: auto;
+  left: 50%;
+  margin-left: -371px;
+  margin-top: -43px;
+  color: transparent;
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgs img {
+  height: 85px;
+}
+
+@media screen and (max-width: 800px) {
+  .imgs {
+    width: 366px;
+    height: 180px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -183px;
+  }
+  .imgs img {
+    height: 86px;
+  }
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.navbar-default .navbar-nav>li>a.active {
+  color: #00a0dc;
+}
+h3.title-agile {
+  color: #00a0dc;
+}
+
+span.sub-title {
+  background-color: #00a0dc;
+}
+
+.about-sub-grid-w3ls h4 ,h5.blog-w3ls{
+  color: #00a0dc;
+}
+/* 新添加的样式 */
+
+.order-pic {
+  width: 100%;
+  height: 147px;
+  line-height: 147px;
+  background: url(../../assets/Index/img/bdtg_24.png) no-repeat center;
+}
+
+.order-pic img {
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.order-pic:hover img {
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.descript {
+  line-height: 30px;
+}
+
+@media (min-width: 1200px) {
+
+  .widthDown {
+    width: 20%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
+
+.oneAnim:nth-of-type(1) {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+.oneAnim:nth-of-type(2) {
+  -webkit-animation-duration: 1.3s;
+  -webkit-animation-delay: 1s;
+  animation-duration: 1.3s;
+  animation-delay: 1s;
+}
+
+.oneAnim:nth-of-type(3) {
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 1.3s;
+  animation-duration: 1.5s;
+  animation-delay: 1.3s;
+}
+
+.oneAnim:nth-of-type(4) {
+  -webkit-animation-duration: 1.8s;
+  -webkit-animation-delay: 1.6s;
+  animation-duration: 1.8s;
+  animation-delay: 1.6s;
+}
+
+.oneAnim:nth-of-type(5) {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1.8s;
+  animation-duration: 2s;
+  animation-delay: 1.8s;
+}
+
+.oneAnim:nth-of-type(6) {
+  -webkit-animation-duration: 2.3s;
+  -webkit-animation-delay: 2s;
+  animation-duration: 2.3s;
+  animation-delay: 2s;
+}
+
+#serive {
+  padding-top: 80px;
+}
+
+.section-headlines {
+  margin-bottom: 40px;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+.section-headlines h4{
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+#serive .service-img {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.all-detail:nth-of-type(1) {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.all-detail:nth-of-type(2) {
+  -webkit-animation-duration: 2.3s;
+  -webkit-animation-delay: 1.5s;
+  animation-duration: 2.3s;
+  animation-delay: 1.5s;
+}
+
+.all-detail:nth-of-type(3) {
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-delay: 1.8s;
+  animation-duration: 2.5s;
+  animation-delay: 1.8s;
+}
+
+.all-detail:nth-of-type(4) {
+  -webkit-animation-duration: 2.8s;
+  -webkit-animation-delay: 2s;
+  animation-duration: 2.8s;
+  animation-delay: 2s;
+}
+
+#allContent {
+  overflow: hidden;
+}
+
+.price-month {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.price-tall {
+  -webkit-animation-duration: 2.2s;
+  -webkit-animation-delay: 1.5s;
+  animation-duration: 2.2s;
+  animation-delay: 1.5s;
+}
+
+.price-proxy {
+  -webkit-animation-duration: 2.3s;
+  -webkit-animation-delay: 1.8s;
+  animation-duration: 2.3s;
+  animation-delay: 1.8s;
+}
+
+.input-name {
+  -webkit-animation-duration: 2.3s;
+  -webkit-animation-delay: 1s;
+  animation-duration: 2.3s;
+  animation-delay: 1s;
+}
+
+.input-number {
+  -webkit-animation-duration: 2.3s;
+  -webkit-animation-delay: 1s;
+  animation-duration: 2.3s;
+  animation-delay: 1s;
+}
+
+.contact-advice {
+  -webkit-animation-duration: 2.3s;
+  -webkit-animation-delay: 1.1s;
+  animation-duration: 2.3s;
+  animation-delay: 1.1s;
+}
+
+.contact-btn {
+  -webkit-animation-duration: 2.3s;
+  -webkit-animation-delay: 1.2s;
+  animation-duration: 2.3s;
+  animation-delay: 1.2s;
+}
+/* about */
+.about-top{
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+.about-left{
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-delay: 1.5s;
+  animation-duration: 2.5s;
+  animation-delay: 1.5s;
+}
+.about-center{
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1.8s;
+  animation-duration: 3s;
+  animation-delay: 1.8s;
+}
+.about-right{
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+#slider{
+  overflow: hidden;
+}

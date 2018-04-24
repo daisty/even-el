@@ -1,0 +1,214 @@
+{extend name="panel/layout" /} 
+{block name="main"}
+
+<div class="padding-md">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					余额
+				</div>
+				<div class="panel-body">
+					<form action="#" class="form-horizontal">
+						<div class="form-group">
+							<label class="col-lg-3 control-label">当前余额</label>
+							<div class="col-lg-8">
+								<input type="text" class="form-control" value="{$userInfo.point}元" disabled>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-lg-3 control-label">当前身份</label>
+							<div class="col-lg-8">
+								<input type="text" class="form-control" value="{$power}" disabled>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					订单
+				</div>
+
+				<div class="table-responsive">
+					<table class="table table-hover table-striped">
+						<thead>
+							<tr>
+								<th>订单详情</th>
+								<th>价格</th>
+								<th>购买数量</th>
+								<th>总价格</th>
+								<th>退款/售后</th>
+							</tr>
+						</thead>
+
+						<tbody>
+
+							{volist name="viplist" id="row"}
+							<tr>
+								<td>0</td>
+								<td>0元</td>
+								<td>0</td>
+								<td>0元</td>
+								<td>
+									<button>售后</button>
+									<button>退款</button>
+									<!-- <a href="#">售后</a> -->
+									<!-- <a href="{:url('shop')}?action=buy&id={$row.id}">退款</a> -->
+								</td>
+							</tr>
+							{/volist}
+						</tbody>
+					</table>
+					<form class="form-mg">
+
+						<div class="container-fluid">
+							<!-- 列排序  把2个列的位置顺序交换，宽度不变 , col-md-push-3: 向右移动3列, col-md-pull-9: 向左移动9列 -->
+							<div class="row bg-primary">
+								<div class="col-md-6 col-md-push ">
+									<input class="check" type="checkbox">请选择栏编号</div>
+								<div class="col-md-6 col-md-push-4 ">
+									<a href="#">[取消]</a>
+									<a href="#">[确定]</a>
+								</div>
+							</div>
+							<p class="center">已选择:</p>
+
+							<div class="pitch">
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option1">1
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option2">2
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option3">3
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option1">4
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option2">5
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option3">6
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option1">7
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option2">8
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option3">9
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option1">10
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option2">11
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option3">12
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option1">13
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option2">14
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option3">15
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option1">16
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option2">17
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option3">18
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option1">19
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option2">20
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option3">21
+								</label>
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option2">22
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option3">23
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option1">24
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option2">25
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option3">26
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option1">27
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option2">28
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option3">29
+								</label>
+
+								<label class="checkbox-inline checkMargin">
+									<input type="checkbox" id="inlineCheckbox" value="option1">30
+								</label>
+							</div>
+
+					</form>
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div>
+</div>
+</div>
+
+{/block}

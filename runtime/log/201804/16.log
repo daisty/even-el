@@ -1,0 +1,65 @@
+[ 2018-04-16T14:06:33+08:00 ] 127.0.0.1 127.0.0.1 GET /index/panel/chat.html
+[ log ] localhost/index/panel/chat.html [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：1,876.83kb] [文件加载：46]
+[ error ] [8]未定义数组下标: 0
+[ error ] [8]未定义数组下标: 0
+
+---------------------------------------------------------------
+[ 2018-04-16T14:06:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/panel/chat.html
+[ log ] localhost/index/panel/chat.html [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：1,697.66kb] [文件加载：44]
+[ error ] [8]未定义数组下标: 0
+[ error ] [8]未定义数组下标: 0
+
+---------------------------------------------------------------
+[ 2018-04-16T14:32:57+08:00 ] ::1 ::1 GET /index.php?&rand=624d1c240775c8995f977a41b02d5ea6
+[ log ] localhost/index.php?&rand=624d1c240775c8995f977a41b02d5ea6 [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：1,406.56kb] [文件加载：40]
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'material'
+
+---------------------------------------------------------------
+[ 2018-04-16T14:34:27+08:00 ] ::1 ::1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,106.90kb] [文件加载：40]
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'material'
+
+---------------------------------------------------------------
+[ 2018-04-16T14:35:19+08:00 ] ::1 ::1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.029001s][吞吐率：34.48req/s] [内存消耗：1,125.40kb] [文件加载：40]
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'material'
+
+---------------------------------------------------------------
+[ 2018-04-16T14:53:46+08:00 ] ::1 ::1 GET /index.php/index/panel/chat.html
+[ log ] localhost/index.php/index/panel/chat.html [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,507.32kb] [文件加载：46]
+[ error ] [8]未定义数组下标: 0
+[ error ] [8]未定义数组下标: 0
+
+---------------------------------------------------------------
+[ 2018-04-16T14:53:49+08:00 ] ::1 ::1 GET /index.php/index/panel/chat.html
+[ log ] localhost/index.php/index/panel/chat.html [运行时间：0.062003s][吞吐率：16.13req/s] [内存消耗：1,354.78kb] [文件加载：44]
+[ error ] [8]未定义数组下标: 0
+[ error ] [8]未定义数组下标: 0
+
+---------------------------------------------------------------
+[ 2018-04-16T14:54:10+08:00 ] ::1 ::1 GET /index.php/index/panel/chat.html
+[ log ] localhost/index.php/index/panel/chat.html [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,354.78kb] [文件加载：44]
+[ error ] [8]未定义数组下标: 0
+[ error ] [8]未定义数组下标: 0
+
+---------------------------------------------------------------
+[ 2018-04-16T14:58:07+08:00 ] ::1 ::1 GET /index.php/index/panel/rank/kind/skin-config.html
+[ log ] localhost/index.php/index/panel/rank/kind/skin-config.html [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,348.77kb] [文件加载：44]
+[ error ] [0]Malformed UTF-8 characters, possibly incorrectly encoded
+
+---------------------------------------------------------------
+[ 2018-04-16T14:58:16+08:00 ] ::1 ::1 GET /index.php/index/panel/rank/kind/skin-config.html
+[ log ] localhost/index.php/index/panel/rank/kind/skin-config.html [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,348.77kb] [文件加载：44]
+[ error ] [0]Malformed UTF-8 characters, possibly incorrectly encoded
+
+---------------------------------------------------------------
+[ 2018-04-16T14:58:22+08:00 ] ::1 ::1 GET /index.php/index/panel/rank/kind/skin-config.html
+[ log ] localhost/index.php/index/panel/rank/kind/skin-config.html [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,348.77kb] [文件加载：44]
+[ error ] [0]Malformed UTF-8 characters, possibly incorrectly encoded
+
+---------------------------------------------------------------
+[ 2018-04-16T15:44:53+08:00 ] ::1 ::1 GET /index.php/index/panel/rank/kind/skin-config.html
+[ log ] localhost/index.php/index/panel/rank/kind/skin-config.html [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,351.72kb] [文件加载：44]
+[ error ] [0]Malformed UTF-8 characters, possibly incorrectly encoded
+
+---------------------------------------------------------------
